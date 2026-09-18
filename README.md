@@ -93,7 +93,7 @@ Installation
 Clone the repository:
 
 Bash
-git clone https://github.com/your-username/marketi-app.git
+git clone https://github.com/MohamedHany1512/marketi-app.git
 cd marketi-app
 Fetch project dependencies:
 
