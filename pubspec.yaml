@@ -1,0 +1,47 @@
+name: marketi
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.1
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  dartz: ^0.10.1
+  dio: ^5.11.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_native_splash: ^2.4.8
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.3.0
+  get_it: ^9.2.1
+  shared_preferences: ^2.5.5
+  smooth_page_indicator: ^3.0.0
+  webview_flutter: ^4.14.1
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+  
+  #   - images/a_dot_ham.jpeg
+
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          style: italic
