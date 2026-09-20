@@ -6,13 +6,23 @@ A complete E-Commerce application built with **Flutter**, adhering to modern dev
 
 ## 📸 Screenshots
 
-| Home Screen | Shopping Cart | Product Details | User Profile |
+| onBoarding 1 |  onBoarding 2 |  onBoarding 3 | Login |
 | :---: | :---: | :---: | :---: |
 | <img src="screenshots/1.png" width="200"/> | <img src="screenshots/2.png" width="200"/> | <img src="screenshots/3.png" width="200"/> | <img src="screenshots/4.png" width="200"/> |
 
-| Authentication | Favorites | Search | Payment |
+| Sign_up | Home | Home | All Categories |
 | :---: | :---: | :---: | :---: |
-| <img src="screenshots/10.png" width="200"/> | <img src="screenshots/11.png" width="200"/> | <img src="screenshots/12.png" width="200"/> | <img src="screenshots/13.png" width="200"/> |
+| <img src="screenshots/5.png" width="200"/> | <img src="screenshots/6.png" width="200"/> | <img src="screenshots/7.png" width="200"/> | <img src="screenshots/8.png" width="200"/> |
+
+---
+| All Brands | Cart | Search | Payment |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/9.png" width="200"/> | <img src="screenshots/10.png" width="200"/> | <img src="screenshots/14.png" width="200"/> | <img src="screenshots/11.png" width="200"/> |
+
+---
+| Favourite | Profile | 
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/12.png" width="200"/> | <img src="screenshots/13.png" width="200"/> | 
 
 ---
 
