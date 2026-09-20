@@ -1,105 +1,88 @@
-🛒 Marketi App
-A modern, full-featured E-Commerce mobile application built with Flutter, following Clean Architecture principles and best industry practices to ensure scalability, maintainability, and optimal performance.
+# 🛒 Marketi App
 
-📸 Screenshots
-Note: Make sure to place your app screenshots inside a screenshots/ directory in the root of your project, or replace the src links above with your hosted image URLs.
-<div align="center">
-  <img src="screenshots/1.png" width="200" alt="Onboarding1" />
-  <img src="screenshots/2.png" width="200" alt="Onboarding2" />
-  <img src="screenshots/3.png" width="200" alt="Onboarding3" />
-  <img src="screenshots/4.png" width="200" alt="Login View" />
-  <img src="screenshots/5.png" width="200" alt="Register View" />
-  <img src="screenshots/6.png" width="200" alt="Home View" />
-  <img src="screenshots/7.png" width="200" alt="Home View 2" />
-  <img src="screenshots/8.png" width="200" alt="All Categories " />
-  <img src="screenshots/9.png" width="200" alt=" All Brands" />
-  <img src="screenshots/10.png" width="200" alt="Cart" />
-  <img src="screenshots/11.png" width="200" alt="Payment " />
-  <img src="screenshots/12.png" width="200" alt="Favourites " />
-  <img src="screenshots/13.png" width="200" alt="Profile" />
+A complete E-Commerce application built with **Flutter**, adhering to modern development best practices, **Clean Architecture**, and **Cubit / Bloc** state management.
+
+---
+
+## 📸 Screenshots
+
+| Home Screen | Shopping Cart | Product Details | User Profile |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/1.png" width="200"/> | <img src="screenshots/2.png" width="200"/> | <img src="screenshots/3.png" width="200"/> | <img src="screenshots/4.png" width="200"/> |
+
+| Authentication | Favorites | Search | Payment |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/10.png" width="200"/> | <img src="screenshots/11.png" width="200"/> | <img src="screenshots/12.png" width="200"/> | <img src="screenshots/13.png" width="200"/> |
+
+---
+
+## ✨ Features
+
+* 🔐 **Authentication:** Sign up and Login functionality.
+* 🛍️ **Home & Catalog:**
+  * Browse categories and brands.
+  * Product listings and detailed views.
+* 🔍 **Search & Filter:** Instant search with debouncer implementation to optimize network requests.
+* ❤️ **Wishlist:** Add and remove products from favorites.
+* 🛒 **Shopping Cart:** Manage cart items and quantities.
+* 💳 **Payment Integration:** Integrated **Paymob** payment gateway via WebView.
+* 👤 **User Profile:** Manage user profile information.
+* 🚀 **Onboarding:** Interactive introduction screens for new users.
+
+---
+
+## 🏗️ Project Architecture
+
+Built using **Feature-First Clean Architecture** to ensure separation of concerns, scalability, and testability:
+
+```text
+lib/
+├── core/                         # Shared utilities, services, and configurations
+│   ├── common/                   # Custom Widgets & Helpers
+│   ├── errors/                   # Error handling & Exception models
+│   ├── helper/                   # CacheHelper (Shared Preferences)
+│   ├── network/                  # Dio API Consumer, Interceptors & Endpoints
+│   ├── routing/                  # App Router & Route definitions
+│   ├── services/                 # Dependency Injection (GetIt Service Locator)
+│   └── themes/                   # App Theme & Color palettes
+│
+└── features/                     # Feature modules
+    ├── auth/                     # Authentication (Login & Register)
+    ├── cart/                     # Cart Management
+    ├── favorite/                 # Favorites / Wishlist
+    ├── home/                     # Products, Categories, Brands & Details
+    ├── onboarding/               # Onboarding flow
+    ├── payment/                  # Paymob Integration & WebView
+    ├── profile/                  # User Profile
+    └── search/                   # Search functionality
 
 
-</div>
+🛠️ Tech Stack & Dependencies
+Framework: Flutter ( свойства & Dart)
 
-🌟 Key Features
-Onboarding Experience: Smooth walkthrough screens for new users.
+State Management: Flutter Bloc / Cubit
 
-Authentication & Security:
-
-Login and Sign Up functionality.
-
-Remember Me option with secure local storage.
-
-Product Discovery & Search:
-
-Explore categories, featured brands, and promotional banners.
-
-Instant search and item filtering.
-
-Cart & Wishlist Management:
-
-Add, update, or remove items with real-time price calculation.
-
-Save favorite products for quick access.
-
-Payment Integration:
-
-Integrated with Paymob payment gateway via WebView for secure online transactions.
-
-User Profile: Manage user details and application settings.
-
-🏗️ Tech Stack & Architecture
-This project is built using Clean Architecture to ensure separation of concerns, high testability, and easy scalability.
-
-Framework: Flutter
-
-State Management: BLoC / Cubit
-
-Networking: Dio (with API Interceptors & Exception Handling)
+Networking: Dio
 
 Dependency Injection: GetIt
 
-Local Storage: Shared Preferences (Cache Helper)
+Local Storage: Shared Preferences
 
-Navigation: GoRouter / App Router
+Routing: Native Dynamic Routing (AppRouter)
 
-Plaintext
-lib/
-├── core/
-│   ├── common/         # Standalone and reused UI widgets
-│   ├── errors/         # Custom exception handling & error models
-│   ├── helper/         # Cache and local storage helpers
-│   ├── network/        # ApiConsumer & Dio setup
-│   ├── routing/        # App routing configuration
-│   ├── services/       # Dependency Injection (GetIt) setup
-│   └── themes/         # Color palettes & App Themes
-│
-└── features/
-    ├── auth/           # Login & Sign-Up flow
-    ├── cart/           # Cart management
-    ├── favorite/       # Favorite products list
-    ├── home/           # Dashboard, Categories, Brands & Products
-    ├── onboarding/     # Intro screens
-    ├── payment/        # Paymob integration & Checkout flow
-    ├── profile/        # User Profile Management
-    └── search/         # Product search feature
+Payment Gateway: Paymob SDK / Webview
+
 🚀 Getting Started
-Prerequisites
-Flutter SDK installed on your machine.
-
-Android Studio or VS Code with Flutter extensions.
-
-Installation
 Clone the repository:
 
 Bash
-git clone https://github.com/MohamedHany1512/marketi-app.git
-cd marketi-app
-Fetch project dependencies:
+git clone [https://github.com/your-username/marketi_app.git](https://github.com/your-username/marketi_app.git)
+cd marketi_app
+Install dependencies:
 
 Bash
 flutter pub get
-Run the application:
+Run the app:
 
 Bash
 flutter run
