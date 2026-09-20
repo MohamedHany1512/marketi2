@@ -21,7 +21,7 @@ A complete E-Commerce application built with **Flutter**, adhering to modern dev
 
 ---
 | Favourite | Profile | 
-| :---: | :---: | :---: | :---: |
+| :---: | :---: |
 | <img src="screenshots/12.png" width="200"/> | <img src="screenshots/13.png" width="200"/> | 
 
 ---
