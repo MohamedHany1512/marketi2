@@ -86,7 +86,7 @@ Payment Gateway: Paymob SDK / Webview
 Clone the repository:
 
 Bash
-git clone [https://github.com/your-username/marketi_app.git](https://github.com/your-username/marketi_app.git)
+git clone https://github.com/MohamedHany1512/marketi2.git
 cd marketi_app
 Install dependencies:
 
